@@ -1,0 +1,40 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+// font-awesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "./base/base";
+@import "./abstracts/variables";
+@import "./layout/container";
+@import "./layout/footer";
+@import "./layout/menu";
+@import "./layout/flex-container";
+
+.main-nav {
+  @include innNav(80px);
+  color: aliceblue;
+}
+
+.flex-container{
+
+  @include flex-container-div;
+
+  div{
+
+          @include flex-container-items;
+      }
+
+}
+
+.main_section{
+
+  border-style: solid;
+  border-color:black;
+  padding: 25px;
+  margin: 25px;
+  height: 150px;
+  width: 150px;
+  left: 100px;
+}
+
+
+
